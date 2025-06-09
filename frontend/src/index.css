@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.submit {
+  background: linear-gradient(
+    249deg,
+    rgb(9, 133, 223) 0%,
+    rgb(67, 11, 138) 83.1421%
+  );
+  border-radius: 20px;
+  height: 1.8rem;
+  width: 4.5rem;
+  opacity: 0.9;
+  will-change: auto;
+  border: none;
+  color: white;
+  padding: 0.5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.parentContainer {
+  margin: 1.5rem auto 0 auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 94vh;
+  width: 96vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5%;
+  border-radius: 0.5rem;
+}
+
+.react-flow {
+  width: 96% !important;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  background-color: oklch(0.97 0 106);
+  margin-left: 1.8rem;
+  margin-right: 1.8rem;
+}
+
+* {
+  border-color: oklch(0.922 0 0) !important;
+  outline-color: color-mix(in oklab, oklch(0.708 0 0) 50%, transparent);
+  font-family: sans-serif !important;
+}
+
+.react-flow__node div {
+  background-color: #fff;
+}
+
+.labelContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  gap: 0.5rem;
+  min-width: 100%;
+  margin-bottom: 0.7rem;
+  font-size: 14px;
+}
+
+input,
+select {
+  max-width: 100%;
+  min-width: -webkit-fill-available;
+  background-color: #f5f5f5;
+  color: #242424;
+  padding: 0.15rem 0.5rem;
+  min-height: 10px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  line-height: 1.15;
+  box-shadow: 0px 10px 20px -18px;
+}
+
+input:focus {
+  border-bottom: 2px solid #5b5fc7;
+  border-radius: 4px 4px 2px 2px;
+}
+
+input:hover {
+  outline: 1px solid whitesmoke;
+}
+input::placeholder {
+  font-size: 10px;
+}
